@@ -20,7 +20,7 @@ const Header = () => {
   const { data: session } = authClient.useSession();
   return (
     <header className="flex items-center justify-between p-5">
-      <Link href="/">
+      <Link prefetch={true} href="/">
         <Image src="/Logo.svg" alt="logo" width={100} height={26.14} />
       </Link>
 
@@ -69,7 +69,7 @@ const Header = () => {
                 <div className="flex items-center justify-between">
                   <h2 className="font-semibold">Olá, Faça seu Login !</h2>
                   <Button asChild size="icon" variant="outline">
-                    <Link href="/authentication">
+                    <Link prefetch={true} href="/authentication">
                       <LogInIcon />
                     </Link>
                   </Button>
