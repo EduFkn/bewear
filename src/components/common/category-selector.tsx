@@ -5,16 +5,12 @@ import { categoryTable } from "@/db/schema";
 import { Button } from "../ui/button";
 
 interface CategorySelectorProps {
-  selectedVariantSlug: string;
   categories: (typeof categoryTable.$inferSelect)[];
 }
 
-const CategorySelector = ({
-  selectedVariantSlug,
-  categories,
-}: CategorySelectorProps) => {
+const CategorySelector = ({ categories }: CategorySelectorProps) => {
   return (
-    <div className="rounded-3xl bg-[#f4efff] p-6">
+    <div className="rounded-3xl bg-[#F4EFFF] p-6">
       <div className="grid grid-cols-2 gap-3">
         {categories.map((category) => (
           <Button
@@ -22,9 +18,7 @@ const CategorySelector = ({
             variant="ghost"
             className="rounded-full bg-white text-xs font-semibold"
           >
-            <Link prefetch={true} href={`/category/${category.slug}`}>
-              {category.name}
-            </Link>
+            <Link href={`/category/${category.slug}`}>{category.name}</Link>
           </Button>
         ))}
       </div>

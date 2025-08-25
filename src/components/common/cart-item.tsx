@@ -15,6 +15,7 @@ interface CartItemProps {
 }
 
 const CartItem = ({
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     id,
     productName,
     productVariantName,

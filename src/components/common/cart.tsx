@@ -21,6 +21,7 @@ import CartItem from "./cart-item";
 
 
 export const Cart = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { data: cart, isPending: cartIsLoading } = useQuery({
     queryKey: ["cart"],
     queryFn: () => getCart(),

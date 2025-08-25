@@ -61,6 +61,7 @@ const SignUpForm = () => {
   });
 
   async function onSubmit(values: FormValues) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { data, error } = await authClient.signUp.email({
       name: values.name,
       email: values.email,
