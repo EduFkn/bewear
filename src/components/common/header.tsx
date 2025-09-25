@@ -20,9 +20,9 @@ import { Cart } from "./cart";
 const Header = () => {
   const { data: session } = authClient.useSession();
   return (
-    <header className="flex items-center justify-between p-5">
+    <header className="flex items-center justify-between p-4">
       <Link prefetch={true} href="/">
-        <Image quality={100} src="/Logo.svg" alt="logo" width={80} height={20} />
+        <Image quality={100} src="/Logo.svg" alt="logo" width={70} height={10} />
       </Link>
 
       <div className="flex items-center gap-3">
