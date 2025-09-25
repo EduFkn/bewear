@@ -32,7 +32,7 @@ const Home = async () => {
             height={0}
             width={0}
             sizes="100vw"
-            className="h-auto w-full"
+            className="h-auto w-full rounded-3xl"
           />
         </div>
 
@@ -42,14 +42,14 @@ const Home = async () => {
           <CategorySelector categories={categories} />
         </div>
 
-        <div className="px-5">
+        <div className="px-5 ">
           <Image
             src="/Banner2.png"
             alt="Leve uma vida com estilo"
             height={0}
             width={0}
             sizes="100vw"
-            className="h-auto w-full"
+            className="h-auto w-full rounded-3xl"
           />
         </div>
 

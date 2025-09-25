@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between p-5">
       <Link prefetch={true} href="/">
-        <Image quality={100} src="/Logo.svg" alt="logo" width={100} height={26.14} />
+        <Image quality={100} src="/Logo.svg" alt="logo" width={80} height={20} />
       </Link>
 
       <div className="flex items-center gap-3">
