@@ -26,7 +26,7 @@ const Home = async () => {
       <div className="space-y-6">
         <div className="px-5">
           <Image
-            src="/public/banner.jpg"
+            src="/Banner1.png"
             alt="Leve uma vida com estilo"
             height={0}
             width={0}
@@ -43,7 +43,7 @@ const Home = async () => {
 
         <div className="px-5">
           <Image
-            src="/public/banner-2.jpg"
+            src="/Banner2.png"
             alt="Leve uma vida com estilo"
             height={0}
             width={0}
