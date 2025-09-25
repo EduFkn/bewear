@@ -21,6 +21,7 @@ const VariantSelector = ({ variants }: VariantSelectorProps) => {
                     className={slug === variant.slug ? "border-primary border-2 rounded-xl" : ""}
                 >
                     <Image
+                        quality={100}
                         src={variant.imageUrl}
                         alt={variant.name}
                         width={68}

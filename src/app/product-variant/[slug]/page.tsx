@@ -42,6 +42,7 @@ const ProductVariantPage = async ({ params }: ProductVariantPageProps) => {
     <>
       <div className="flex flex-col space-y-6">
         <Image
+          quality={100}
           src={productVariant.imageUrl}
           alt={productVariant.name}
           width={0}
